@@ -1,0 +1,115 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 Jan 2018, 4:43:23 PM
+    Author     : Cheda
+*/
+/* Footer Styles */
+
+/*STICKY FOOTER*/
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto -520px; }
+  @media only screen and (min-width: 601px) {
+    .wrapper {
+      margin-bottom: -20px; } }
+
+footer, .push {
+  height: 520px; }
+  @media only screen and (min-width: 601px) {
+    footer, .push {
+      height: 20px; } }
+
+/*footer {
+    margin: 50px 0;
+}*/
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.btn-primary-green {
+  color: #fff;
+  background-color:#20bf1d;
+  border-color: #20bf1d;
+}
+
+/*FOOTER*/
+footer {
+  margin: 10px; 
+  /*height: 100px;*/ 
+  /*background-color: #000;*/
+  border-top: 1px solid #0066cc;
+  color: #eee; }
+  footer .container {
+    
+    padding: 0 15px 15px; }
+    @media only screen and (min-width: 601px) {
+      footer .container .address, footer .container .clients {
+        width: 50%;
+        float: left; } }
+    footer .container .address a, footer .container .clients a {
+      -webkit-transition: 0.3s ease all;
+      -moz-transition: 0.3s ease all;
+      -ms-transition: 0.3s ease all;
+      -o-transition: 0.3s ease all;
+      transition: 0.3s ease all; }
+      footer .container .address a:hover, footer .container .clients a:hover {
+        opacity: 0.6;
+        filter: alpha(opacity=60); }
+    footer .container .clients div {
+      width: 275px; }
+      @media only screen and (min-width: 601px) {
+        footer .container .clients div {
+          float: right; } }
+      @media only screen and (min-width: 800px) {
+        footer .container .clients div {
+          width: 360px; } }
+      @media only screen and (min-width: 990px) {
+        footer .container .clients div {
+          width: 275px; } }
+      @media only screen and (min-width: 1300px) {
+        footer .container .clients div {
+          width: 360px; } }
+    footer .container .clients a.hide {
+      display: none; }
+      @media only screen and (min-width: 800px) {
+        footer .container .clients a.hide {
+          display: inline-block; } }
+      @media only screen and (min-width: 990px) {
+        footer .container .clients a.hide {
+          display: none; } }
+      @media only screen and (min-width: 1300px) {
+        footer .container .clients a.hide {
+          display: inline-block; } }
+  footer .btm-line {
+    padding: 1px 0;
+    /*background-color: #404040;*/ 
+  }
+    footer .btm-line .container {
+      padding: 0 1px; }
+      footer .btm-line .container p {
+        text-align: center;
+        margin: 0;
+        color: #000;
+        font-size: 100%; }
+

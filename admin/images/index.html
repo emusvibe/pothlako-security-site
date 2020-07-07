@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning Management System</title>
+        <!-- Bootstrap -->
+			<!-- <link href="images/logo.png" rel="icon" type="image"> -->
+			<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+			<link href="../bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+			<link href="../bootstrap/css/font-awesome.css" rel="stylesheet" media="screen">
+			<link href="../bootstrap/css/my_style.css" rel="stylesheet" media="screen">
+			<link href="vendors/easypiechart/jquery.easy-pie-chart.css" rel="stylesheet" media="screen">
+			<link href="../css/styles.css" rel="stylesheet" media="screen">
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+		<!-- calendar css -->
+		<link href="vendors/fullcalendar/fullcalendar.css" rel="stylesheet" media="screen">
+		<script src="vendors/jquery-1.9.1.min.js"></script>
+		<!-- <script src="admin/vendors/bootstrap.min.js"></script> -->
+        <script src="vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<!-- data table -->
+		<link href="../css/DT_bootstrap.css" rel="stylesheet" media="screen">
+		<!-- notification  -->
+		<link href="vendors/jGrowl/jquery.jgrowl.css" rel="stylesheet" media="screen">
+		<!-- wysiwug  -->
+		<link rel="stylesheet" type="text/css" href="vendors/bootstrap-wysihtml5/src/bootstrap-wysihtml5.css"></link>
+		<script src="vendors/jquery-1.9.1.min.js"></script>
+		<!-- <script src="admin/vendors/bootstrap.min.js"></script> -->
+		<script src="vendors/jGrowl/jquery.jgrowl.js"></script>
+    </head>
+    <body id="login">
+    <div class="container">
+
+      <!--<form id="login_form" class="form-signin" method="post">-->
+      <form class="form-signin" role="form" method="post" action="login.php">
+        <h3 class="form-signin-heading"><i class="icon-lock"></i> Please Login</h3>
+        <input type="text" class="input-block-level" id="usernmae" name="username" placeholder="Username" required>
+        <input type="password" class="input-block-level" id="password" name="password" placeholder="Password" required>
+        <button name="login" class="btn btn-info" type="submit"><i class="icon-signin icon-"></i> Sign in</button>
+		
+      </form>
+<!--      <script>
+			jQuery(document).ready(function(){
+			jQuery("#login_form").submit(function(e){
+					e.preventDefault();
+					var formData = jQuery(this).serialize();
+					$.ajax({
+						type: "POST",
+						url: "api/login.php",
+						data: formData,
+						success: function(html){
+						if(html=='true')
+						{
+						$.jGrowl("Welcome to CHMSC Learning Management System", { header: 'Access Granted' });
+						var delay = 2000;
+							setTimeout(function(){ window.location = 'dashboard.php'  }, delay);  
+						}
+						else
+						{
+						$.jGrowl("Please Check your username and Password", { header: 'Login Failed' });
+						// $.jGrowl("Welcome to CHMSC Learning Management System", { header: 'Access Granted' });
+						// var delay = 2000;
+						// 	setTimeout(function(){ window.location = 'dashboard.php'  }, delay);
+						}
+						}
+						
+					});
+					return false;
+				});
+			});
+			</script>-->
+
+		
+
+
+    </div> <!-- /container -->
+<!--/.fluid-container-->
+
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendors/easypiechart/jquery.easy-pie-chart.js"></script>
+        <script src="../js/scripts.js"></script>
+        <script>
+        $(function() {
+            // Easy pie charts
+            $('.chart').easyPieChart({animate: 1000});
+        });
+        </script>
+
+<!-- data table -->
+		<script src="vendors/datatables/js/jquery.dataTables.min.js"></script>
+        <script src="../js/DT_bootstrap.js"></script>
+        <script>
+        $(function() {
+            
+        });
+        </script>
+		
+		<script src="vendors/jGrowl/jquery.jgrowl.js"></script>
+
+    <script>
+        $(function() {
+            $('.tooltip').tooltip();	
+			$('.tooltip-left').tooltip({ placement: 'left' });	
+			$('.tooltip-right').tooltip({ placement: 'right' });	
+			$('.tooltip-top').tooltip({ placement: 'top' });	
+			$('.tooltip-bottom').tooltip({ placement: 'bottom' });
+
+			$('.popover-left').popover({placement: 'left', trigger: 'hover'});
+			$('.popover-right').popover({placement: 'right', trigger: 'hover'});
+			$('.popover-top').popover({placement: 'top', trigger: 'hover'});
+			$('.popover-bottom').popover({placement: 'bottom', trigger: 'hover'});
+
+			$('.notification').click(function() {
+				var $id = $(this).attr('id');
+				switch($id) {
+					case 'notification-sticky':
+						$.jGrowl("Stick this!", { sticky: true });
+					break;
+
+					case 'notification-header':
+						$.jGrowl("A message with a header", { header: 'Important' });
+					break;
+
+					default:
+						$.jGrowl("Hello world!");
+					break;
+				}
+			});
+        });
+        </script>
+        
+        <link href="vendors/datepicker.css" rel="stylesheet" media="screen">
+        <link href="vendors/uniform.default.css" rel="stylesheet" media="screen">
+        <link href="vendors/chosen.min.css" rel="stylesheet" media="screen">
+		
+       <script src="vendors/jquery.uniform.min.js"></script>
+        <script src="vendors/chosen.jquery.min.js"></script>
+        <script src="vendors/bootstrap-datepicker.js"></script>
+        
+        
+  </body>
+</html>
